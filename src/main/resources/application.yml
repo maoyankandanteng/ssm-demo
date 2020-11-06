@@ -1,0 +1,17 @@
+#页面默认前缀目录
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+#响应页面默认后缀
+    #开发配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/chapter5?serverTimezone=Asia/Shanghai&characterEncoding=utf-8
+#mybatis接口文件位置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.hk.ssmdemo.domain
